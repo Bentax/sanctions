@@ -21,7 +21,7 @@ function Timer() {
   useEffect(() => {
     if (time >= targetTime * 60) {
       setIsTimeUp(true);
-      const audio = new Audio("path/to/sound.mp3");
+      const audio = new Audio("https://actions.google.com/sounds/v1/alarms/beep_short.ogg");
       audio.play();
     }
   }, [time, targetTime]);
